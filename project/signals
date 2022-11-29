@@ -1,0 +1,66 @@
+// void signal_handler(int signal)
+// {
+// 	if (signal == SIGINT)
+// 	{
+// 		printf("HANDLE ME\n");./
+//         rl_on_new_line();
+//         //rl_replace_line("", 0);
+//         rl_redisplay();
+// 		exit(1);
+// 	}
+// }
+
+// // signal(SIGQUIT, SIG_IGN);
+// 	// signal(SIGINT, signal_handler);
+// 	while ((line = readline("minishell@minihell>$ ")) != NULL)
+// 	{
+// 		// if (line == 0)
+// 		// 	exit(EXIT_SUCCESS);
+// 		// signal(SIGQUIT, SIG_IGN);
+// 		// signal(SIGINT, signal_handler);
+// 		check_quotes(line);
+// 		lexer = init_lexer(line);
+// 		token = get_token(lexer, token);
+// 		print_tokens(token);
+// 		parser(&token);
+// 		// tab = get_token_as_cmd(token);
+// 		// print_tab(tab);
+// 		parse_cmd(tab);
+// 		add_history(line);
+// 		token = NULL;
+// 		free(line);
+// 	}
+// }
+
+// heredoc_check(cmd_table);
+// if (!fork_check(cmd_table))
+// 	exec_builtin(cmd_table, &var->envc);
+//print_struct(cmd_table);
+
+
+
+
+
+
+
+/*===================================================================================================*/
+
+// heredoc_check(cmd_table);//matb9aych theydi lia functins ghir diri //
+// if (!fork_check(cmd_table))
+// 	exec_builtin(cmd_table, &var->envc);
+// else
+// {//hadchi rah ghir bach n testi ama rah mazal khass nzid function bach n3rf wach single ola multi cmd
+// 	var->fd_in = open_infile(cmd_table->files);
+// 	if (var->fd_out == -1)
+// 	{
+// 		perror("Error ");
+// 		continue;
+// 	}
+// 	var->fd_out = open_outfile(cmd_table->files);//append fih chi error hnaya mli 9essemt lcode mab9aach khedam kif 9bl 
+// 	if (var->fd_out == -1)
+// 	{
+// 		perror("Error ");
+// 		continue;
+// 	}
+// 	execute_single_cmd(cmd_table);
+// }
