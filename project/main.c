@@ -80,26 +80,6 @@ int	main(int ac, char **av, char **envp)
 				//print_tab(tab);
 				cmd_table = parse_cmd(tab);
 				ft_execute(cmd_table);
-				//print_struct(cmd_table);
-				// heredoc_check(cmd_table);
-				// if (!fork_check(cmd_table))
-				// 	exec_builtin(cmd_table, &var->envc);
-				// else
-				// {
-				// 	var->fd_in = open_infile(cmd_table->files);
-				// 	if (var->fd_out == -1)
-				// 	{
-				// 		perror("Error ");
-				// 		continue;
-				// 	}
-				// 	var->fd_out = open_outfile(cmd_table->files);
-				// 	if (var->fd_out == -1)
-				// 	{
-				// 		perror("Error ");
-				// 		continue;
-				// 	}
-				// 	execute_single_cmd(cmd_table);
-				// }
 				free_all_struct(token, tab, cmd_table);
 			}
 			free_lexer(lexer);

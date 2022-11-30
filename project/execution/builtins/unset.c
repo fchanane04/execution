@@ -6,7 +6,7 @@
 /*   By: fchanane <fchanane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 05:02:24 by fchanane          #+#    #+#             */
-/*   Updated: 2022/11/29 22:02:26 by fchanane         ###   ########.fr       */
+/*   Updated: 2022/11/30 11:13:15 by fchanane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,21 +36,21 @@ void	unset_error(char *str)
 	ft_putstr_fd("\': not a valid identifier\n", 1);
 }
 
-t_env	*unset_inside(t_env *envc)
-{
-	// t_env	*save;
-	// t_env	*current;
-	// t_env	*tmp;
+// t_env	*unset_inside(t_env *envc)
+// {
+// 	// t_env	*save;
+// 	// t_env	*current;
+// 	// t_env	*tmp;
 
-	// save = envc;
-	// current = save->next;
-	// while (current)
-	// {
-	// 	tmp = current->next;
-	// 	if (ft_strncmp(current->line, )) |
-	// }
-	//khas n3awdha
-}
+// 	// save = envc;
+// 	// current = save->next;
+// 	// while (current)
+// 	// {
+// 	// 	tmp = current->next;
+// 	// 	if (ft_strncmp(current->line, )) |
+// 	// }
+// 	//khas n3awdha
+// }
 
 void	ft_unset(t_parser *prog)
 {

@@ -6,7 +6,7 @@
 /*   By: fchanane <fchanane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/27 18:05:49 by fchanane          #+#    #+#             */
-/*   Updated: 2022/11/29 21:58:26 by fchanane         ###   ########.fr       */
+/*   Updated: 2022/11/30 11:12:51 by fchanane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,7 @@ char	**ft_heredoc(t_parser *prog)
 					write_in_heredoc(hd, f->filename);
 					close(hd->fd);
 					if (var->hd_sig == -303)
-						return ;
+						return (NULL);
 				}
 				f = f->next;
 			}

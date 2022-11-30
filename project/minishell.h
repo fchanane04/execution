@@ -6,7 +6,7 @@
 /*   By: fchanane <fchanane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:03:18 by fchanane          #+#    #+#             */
-/*   Updated: 2022/11/29 21:39:22 by fchanane         ###   ########.fr       */
+/*   Updated: 2022/11/30 12:59:14 by fchanane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -182,6 +182,8 @@ void	signal_handler(int sig);
 void	signal_heredoc(int sig);
 void	sig_child(int sig);
 int	ft_isalpha(int c);
+void	ft_builtins(t_parser *prog);
+void	exec_multi_cmd(t_parser *prog, char **heredocs);
 
 
 #endif

@@ -1,0 +1,13 @@
+Makefile
+env_management.c
+env_management.o
+execution
+file
+lexer
+main.c
+main.o
+minishell
+minishell.dSYM
+minishell.h
+parser
+signals

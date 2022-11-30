@@ -6,7 +6,7 @@
 /*   By: fchanane <fchanane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 05:07:00 by fchanane          #+#    #+#             */
-/*   Updated: 2022/11/29 21:53:20 by fchanane         ###   ########.fr       */
+/*   Updated: 2022/11/30 13:10:04 by fchanane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,7 +116,7 @@ void	exec_single_cmd(t_parser *prog, char *heredoc)
 	pid = fork();
 	if (pid == 0)
 	{
-		signal(SIGQUIT, sig_child);
+		//signal(SIGQUIT, sig_child);
 		dup2(var->fd_in, 0);
 		dup2(var->fd_out, 1);
 		path = find_path(create_paths(var->envc), prog->args[0]);

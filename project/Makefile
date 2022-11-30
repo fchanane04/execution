@@ -31,7 +31,7 @@ SRC = \
 		parser/free.c\
 		parser/files.c\
 		env_management.c\
-		execution/execution.c\
+		execution/executor.c\
 		execution/handlers/checks_handler.c\
 		execution/handlers/heredoc_handler.c\
 		execution/handlers/files_handler.c\
@@ -49,6 +49,7 @@ SRC = \
 		execution/builtins/exit.c\
 		execution/handlers/memory_handler.c\
 		execution/exec_single_cmd.c\
+		execution/exec_multi_cmd.c\
 		# execution/heredoc.c\
 		# execution/checks.c\
 		# execution/builtins/cd.c\
